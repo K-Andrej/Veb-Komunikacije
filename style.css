@@ -1,0 +1,330 @@
+body
+{
+    background-color: silver;
+}
+
+.ime_firme
+{
+    background-color: cadetblue;
+    border-radius: 50%;
+    width: 250px;
+    height: max-content;
+    text-align: center;
+    position: relative;
+    animation-name: animacijafirme;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacijafirme
+{
+    0% { left:0px; top:0px;}
+   50% { left:80%; top:0px;}
+  100% { left:0px; top:0px;}
+}
+
+.naziv
+{
+    font-size: 50px;
+}
+
+.navigacioniMeni
+{
+    overflow: hidden;
+    background:black;
+    margin-bottom: 10px;
+}
+ 
+.navigacioniMeni a
+{
+    float: left;
+    display: block;
+    color: white;
+    font-weight:bold;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-right: 1px solid white;
+}
+ 
+.navigacioniMeni a:hover
+{
+    background: gray;
+    color: black;
+}
+
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+#vesti
+{
+    width: 500px;
+    height: auto;
+    border-bottom: 1px solid black;
+}
+
+#vesti img
+{
+    width: 200px;
+    height: auto;
+    float: left;
+    margin-right: 2%;
+}
+
+
+
+
+*
+{
+    box-sizing: border-box;
+}
+
+#tekst
+{
+    border: 1px solid black;
+    width: auto;
+    height: 700px;
+}
+
+#tekst main
+{
+    background-color: green;
+    width: 60%;
+    height: 100%;
+    padding: 2px 15px;
+    border-right: 1px solid black;
+    float: left;
+}
+
+#tekst aside
+{
+    background-color: yellow;
+    width: 40%;
+    height: 100%;
+    padding: 2px 15px;
+    border-right: 1px solid black;
+    float: right;
+}
+
+footer
+{
+    text-align: center;
+    font-style: italic;
+    padding: 2%;
+    clear: both;
+    font-weight: bold;
+}
+
+
+
+
+
+#blok_itema
+{
+    width: 100%;
+    height: 900px;
+    border: 1px solid black;
+    padding: 5% 10%;
+}
+
+#item
+{
+    position: relative;
+    border: none;
+    width: 40%;
+    height: max-content;
+    margin:0% 2% 2% 0%;
+    float: left;
+}
+
+#item:hover
+{
+    background-color: white;
+    padding:10px;
+    box-shadow: 0 0 50px black;
+}
+
+#item img
+{
+
+    width: 38%;
+    height: auto;
+    float: left;
+    margin: 0% 2% 2% 0%;
+}
+
+table
+{
+    width: 60%;
+}
+
+td button
+{
+    background-color: red;
+    font-size: 20px;
+    width: 100%;
+}
+
+
+
+
+form
+{
+    margin: 0% 30% 0% 30%;
+    box-shadow: 0 0 50px black;
+    text-align: center;
+}
+
+fieldset
+{
+    border: none;
+}
+
+
+
+
+#servis_cene
+{
+    float: left;
+    border: 1px solid steelblue;
+    border-radius: 10%;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    padding: 5px;
+    margin: 1%;
+}
+
+#servis_cene:nth-child(even)
+{
+    background-color: black;
+}
+
+#servis_cene:hover
+{
+    background-color: white;
+    box-shadow: 0 0 50px black;
+}
+
+#problem
+{
+    border-bottom: 1px solid steelblue;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40%;
+}
+
+
+input,textarea
+{
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+
+@media screen and (max-width: 700px)
+{
+    .navigacioniMeni a
+    {
+      float: none;
+      width: 100%;
+      border-bottom: 1px solid white;
+    }
+
+    #tekst
+    {
+        height: auto;
+    }
+
+    #tekst main
+    {
+        height: auto;
+        width: 100%;
+        float: none;
+    }
+
+    #tekst aside
+    {
+        height: auto;
+        width: 100%;
+        float: none;
+    }
+
+    footer
+    {
+        width: 100%;
+        padding: 5%;
+    }
+
+    #vesti
+    {
+        width: auto;
+    }
+
+    #vesti img
+    {
+        height: auto;
+        width: 100%;
+    }
+
+
+
+    #blok_itema
+    {
+        height: max-content;
+    }
+
+    #item
+    {
+        float: none;
+        width: auto;
+        height: auto;
+        margin-bottom: 5%;
+    }
+
+    #item img
+    {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    #item table
+    {
+        width: 100%;
+    }
+
+    form
+    {
+        margin: 0% 20% 0% 20%;
+    }
+
+
+
+
+    #servis_cene
+    {
+        float: none;
+        width: 100%;
+        height: max-content;
+        margin: 5% 0%;
+    }
+
+    #problem, #cena
+    {
+        margin: 2%;
+        padding: 1%;
+    }
+
+
+    @keyframes animacijafirme
+{
+    0% { left:0px; top:0px;}
+   50% { left:100px; top:0px;}
+  100% { left:0px; top:0px;}
+}
+
+}
